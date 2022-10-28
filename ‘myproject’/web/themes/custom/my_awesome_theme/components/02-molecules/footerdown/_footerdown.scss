@@ -1,0 +1,26 @@
+.footerdown {
+  background-color: black;
+  border-radius: 5px 5px 0 0;
+  h6 {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+  }
+  &__link {
+    text-align: center;
+    span.twitter a {
+      color: #faaf41;
+    }
+    span.facebook a {
+      color: #3787c8;
+    }
+    span.instagram a {
+      color: #e14b32;
+    }
+    a {
+      padding-left: 25px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+}

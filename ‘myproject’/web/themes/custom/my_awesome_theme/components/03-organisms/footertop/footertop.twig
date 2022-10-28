@@ -1,0 +1,7 @@
+<div class="footertop">
+  {% for item in footer_items %}
+    {% include '@molecules/footer/footer.twig' with {
+      footer_heading: item.footer_h
+    } %}
+  {% endfor %}
+</div>

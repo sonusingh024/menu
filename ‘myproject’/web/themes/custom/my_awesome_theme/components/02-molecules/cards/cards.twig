@@ -1,0 +1,35 @@
+<div class="main_card">
+  <div class="main_card__tittle">
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 1,
+      heading: card_heading
+    } %}
+  </div>
+
+  <div class="main_card__subtittle">
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 6,
+      heading: card_subheading
+    } %}
+  </div>
+
+  <div class="main_card__image">
+    {% include '@atoms/images/image/_image.twig' with {
+      image_src: card_image,
+      image_alt: card_alt
+    } %}
+    <div class="main_card__image--box"></div>
+  </div>
+
+  <div class="main_card__para">
+    {% include '@atoms/text/text/01-paragraph.twig' with {
+      paragraph_content: card_para
+    } %}
+  </div>
+  <div class="main_card__link">
+    {% include '@atoms/links/link/link.twig' with {
+      link_url: cardaddress,
+      link_content: cardlink
+    } %}
+  </div>
+</div>

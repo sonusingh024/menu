@@ -1,0 +1,13 @@
+<div class="listing">
+{% for item in card_items %}
+{% include "@molecules/cards/cards.twig" with {
+    card_heading: item.card_h,
+    card_subheading: item.card_sub,
+    card_para: item.card_paragraph,
+    card_image: item.card_pic,
+    card_alt: item.card_alternate,
+    cardaddress: item.cardadd,
+    cardlink: item.link
+} %}
+{% endfor %}
+</div>

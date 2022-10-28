@@ -1,0 +1,13 @@
+<div class="footer-custom">
+  {% include '@atoms/text/headings/_heading.twig' with {
+    heading_level: 5,
+    heading: footer_heading
+  } %}
+  <ul>
+    {% for ul_item in ul_items %}
+      {% include '@atoms/lists/_list-item.twig' with {
+        list_item_content: ul_item.content
+      } %}
+    {% endfor %}
+  </ul>
+</div>

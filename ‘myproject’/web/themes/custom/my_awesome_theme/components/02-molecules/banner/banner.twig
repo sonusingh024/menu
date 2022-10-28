@@ -1,0 +1,29 @@
+<div class="banner">
+  <div class="banner_logo">
+    {% include '@atoms/images/image/_image.twig' with {
+      image_src: banner_image,
+      image_alt: banner_alt
+    } %}
+  </div>
+  <div class="banner-contants">
+    <div class="banner-contants__tittle">
+      {% include '@atoms/text/headings/_heading.twig' with {
+        heading_level: 2,
+        heading: banner_heading
+      } %}
+    </div>
+    <div class="banner-contants__subtittle">
+      <div class="banner-contants__subtittle--para">
+        {% include '@atoms/text/text/01-paragraph.twig' with {
+          paragraph_content: banner_para
+        } %}
+      </div>
+      <div class="main_card__link">
+        {% include '@atoms/links/link/link.twig' with {
+          link_url: banneraddress,
+          link_content: bannerlink
+        } %}
+      </div>
+    </div>
+  </div>
+</div>

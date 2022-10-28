@@ -1,0 +1,9 @@
+inline_menu_items:
+  - title: 'What we Do'
+    url: '#'
+  - title: 'Insight'
+    url: '#'
+  - title: 'Company'
+    url: '#'
+  - title: 'Case Studies'
+    url: '#'

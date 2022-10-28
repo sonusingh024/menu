@@ -1,0 +1,7 @@
+<div class="footerimage">
+  {% for image in images %}
+    {% include '@atoms/images/image/_image.twig' with {
+      image_src: image.img_src
+    } %}
+  {% endfor %}
+</div>

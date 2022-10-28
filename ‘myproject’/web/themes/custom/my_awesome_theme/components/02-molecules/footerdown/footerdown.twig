@@ -1,0 +1,17 @@
+<div class="footerdown">
+  <div class="footerdown__tittle">
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 6,
+      heading: footerdown_heading
+    } %}
+  </div>
+  <div class="footerdown__link">
+    {% for link in links %}
+      <span class="{{link.linkname}}">
+        {% include '@atoms/links/link/link.twig' with {
+          link_content: link.linkname
+        } %}
+      </span>
+    {% endfor %}
+  </div>
+</div>
